@@ -1,0 +1,26 @@
+`r if(knitr:::is_latex_output()) '\\startappendices'`
+
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Apéndices {-}'` 
+
+<!-- Si es necesario incluir apéndices, van aquí. El primer apéndice debe incluir los comandos superiores. -->
+
+
+# Primer Apéndice
+
+Este primer apéndice incluye bloques de código R complementarios que fueron configurados para enriquecer la lectura del documento:
+
+**Estructura del bloque de código**
+
+```{r ref.label='chunk-parts', eval=FALSE, echo = TRUE}
+```
+
+**Ejemplo de transformación de gráfico/imagen del Capítulo \@ref(code):**
+
+```{r ref.label='logo-rotado', eval=FALSE, echo = TRUE}
+```
+
+
+
+# Segundo Apéndice: Notas Metodológicas y Computacionales
+
+En este apéndice se registran las especificaciones del entorno computacional utilizado para garantizar la total reproducibilidad de los resultados y estimaciones econométricas.

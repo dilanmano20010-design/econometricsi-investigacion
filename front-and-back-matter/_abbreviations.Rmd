@@ -1,0 +1,7 @@
+\item[1-D, 2-D] Una o dos dimensiones, correspondiente a las dimensiones espaciales o matriciales del análisis.
+
+\item[ESPE] Universidad de las Fuerzas Armadas ESPE.
+
+\item[PYMES] Pequeñas y medianas empresas.
+
+\item[MCO] Mínimos Cuadrados Ordinarios.
