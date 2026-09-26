@@ -1,0 +1,7 @@
+Esta investigación presenta la aplicación de enfoques modernos en econometría y ciencia de datos, integrando herramientas computacionales avanzadas en *R Markdown* y `bookdown` para el análisis cuantitativo riguroso, reproducible y aplicado a los negocios y pequeñas y medianas empresas (PYMES).
+
+El trabajo aborda el modelado estadístico y econométrico mediante flujos de trabajo computacionales transparentes, permitiendo vincular directamente fuentes de datos, estimaciones econométricas, visualizaciones dinámicas y documentación teórica en un solo entorno reproducible.
+
+A través del proyecto **Econometrics**, se promueve la adopción de metodologías empíricas sólidas que buscan contribuir a la transformación de la gestión organizacional y facilitar la toma de decisiones basada en evidencia cuantitativa. Los desarrollos, investigaciones y soluciones vinculadas al proyecto se encuentran disponibles en **[econometricis.vercel.app](https://econometricis.vercel.app/)**.
+
+**Palabras clave:** Econometría, ciencia de datos, análisis cuantitativo, PYMES, R Markdown, *bookdown*, reproducibilidad, toma de decisiones basada en evidencia.

@@ -1,0 +1,28 @@
+# Bienvenida {-}
+
+::: {.row}
+:::::: {.col-sm-6}
+Bienvenido a la versión digital e interactiva de la investigación desarrollada con [R Markdown](https://rmarkdown.rstudio.com) y **[EconometricSI — Enfoques Modernos](https://econometricis.vercel.app/)** de la Universidad de las Fuerzas Armadas ESPE.
+
+Para ver o descargar el documento completo en formato PDF, [haz clic aquí](_main.pdf) (o sobre la imagen de la portada).
+
+::::::::: {.byline}
+**Dilan Alexander Manosalvas Andrade** \
+Universidad de las Fuerzas Armadas ESPE \
+[EconometricSI — Enfoques Modernos](https://econometricis.vercel.app/)
+:::::::::
+::::::
+
+:::::: {.col-sm-6 .thesis-cover}
+<a href="_main.pdf" target="_blank"><img src="templates/cover.png" alt="Descargar PDF" class="img-fluid"/></a> 
+::::::
+:::
+
+## Resumen {-}
+```{r abstract, child=here::here('front-and-back-matter/_abstract.Rmd')}
+```
+
+
+## Agradecimientos {-}
+```{r acknowledgments, child=here::here('front-and-back-matter/_acknowledgements.Rmd')}
+```

@@ -1,0 +1,14 @@
+Expreso mi más sincero agradecimiento a mi madre, Azucena Manosalvas, a mis hermanos y a mi querida amiga Jhennyfer Eivar, cuyo apoyo y compañía han sido fundamentales en mi camino. A Jhennyfer, en particular, le agradezco por ayudarme a mantener la mirada en la pragmática de la vida, recordándome que el conocimiento adquiere verdadero sentido cuando puede comprenderse, aplicarse y aportar a la realidad.
+
+A mis mentores, gracias por compartir sus conocimientos, exigirme siempre un poco más y enseñarme que aprender también significa cuestionar, explorar y construir nuevas formas de comprender el mundo. A mis queridos estudiantes, mi especial gratitud: ustedes me han enseñado que toda explicación debe partir de la sencillez, de esa manera en que un niño observa su entorno con curiosidad, sin complicaciones innecesarias y sin abrumar su propio proceso de descubrimiento. Gracias por recordarme que, muchas veces, comprender lo complejo comienza por saber explicarlo de manera sencilla.
+
+Extiendo también mi profundo agradecimiento a la Universidad de las Fuerzas Armadas ESPE, por su guía continua, su rigurosidad académica y las valiosas enseñanzas que han acompañado mi formación profesional y personal.
+
+Finalmente, agradezco de corazón a mis seres queridos por su apoyo incondicional, su paciencia y su confianza en cada etapa del camino. Cada palabra de aliento, cada gesto de comprensión y cada momento compartido.
+
+
+\begin{flushright}
+Dilan Alexander Manosalvas Andrade \\
+Universidad de las Fuerzas Armadas ESPE \\
+Quito, Ecuador
+\end{flushright}
