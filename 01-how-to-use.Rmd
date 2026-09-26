@@ -1,0 +1,134 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  bookdown::html_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+  bookdown::word_document2: default
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# Guía de Uso del Entorno
+
+\minitoc <!-- esto incluye una mini tabla de contenidos -->
+
+## Estructura del Proyecto
+
+``` markdown
+.
++-- index.Rmd
++-- _bookdown.yml
++-- 00-introduction.Rmd
+|   ...
++-- 07-conclusion.Rmd
++-- front-and-back-matter
+|   +-- _abstract.Rmd
+|   +-- 98-appendices.Rmd
+|   ...
++-- bibliography
+|   +-- references.bib
+|   ...
++-- figures
+|   ...
++-- docs
+|   +-- _main.pdf
+|   ...
++-- scripts_and_filters
+|   +-- knit-functions.R
+|   ...
++-- templates
+|   +-- template.tex
+|   ...
+```
+
+### index.Rmd: **metadatos y opciones de diseño**
+
+En `index.Rmd` se definen los metadatos principales del documento (título, autor, institución):
+
+```yaml
+title: |
+  EconometricSI: \
+  Enfoques Modernos en Econometría y Ciencia de Datos \
+  Investigación y Aplicación
+author: Dilan Alexander Manosalvas Andrade
+college: Departamento de Ciencias Económicas, Administrativas y de Comercio
+university: Universidad de las Fuerzas Armadas ESPE
+```
+
+También se configuran las rutas hacia el resumen, agradecimientos, abreviaturas y bibliografía (uno o varios archivos **.bib**):
+
+```yaml
+abstract: |
+  `r paste(readLines("front-and-back-matter/_abstract.Rmd"), collapse = '\n  ')`
+acknowledgements: |
+  `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
+dedication: A mi familia y mentores
+abbreviations: |
+  `r paste(readLines("front-and-back-matter/_abbreviations.Rmd"), collapse = '\n  ')`
+
+#######################
+## bibliography path ##
+#######################
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+```
+
+Finalmente, en **index.Rmd** se personalizan las opciones de salida: encabezados de bibliografía, numeración de páginas, idioma (Español) y estilos visuales.
+
+### Otros archivos **.Rmd** en la raíz: Capítulos
+
+- Cada capítulo cuenta con su propio archivo **.Rmd** en el directorio raíz.
+- Al compilar **index.Rmd**, los capítulos se combinan automáticamente en orden alfanumérico según sus nombres de archivo.
+
+### **front-and-back-matter/**
+
+- Carpeta que contiene las secciones preliminares y finales.
+- Los archivos con guión bajo inicial (como **\_abstract.Rmd**) no se fusionan automáticamente, sino que son llamados explícitamente desde **index.Rmd**.
+- Los archivos como **98-appendices.Rmd** y **99-references_heading.Rmd** se integran al final del documento.
+
+### **templates**
+
+- **template.tex**: plantilla LaTeX para compilar el documento completo a PDF.
+- **brief_template.tex**: plantilla para compilar previsualizaciones de capítulos individuales.
+- **beltcrest.pdf**: logotipo institucional (Universidad de las Fuerzas Armadas ESPE) de la portada.
+
+## Compilación del Documento Completo
+
+- Para compilar el documento completo, abra **index.Rmd** en RStudio y haga clic en el botón **Knit**.
+- Los archivos compilados se guardan automáticamente en la carpeta **docs/** (ideal para GitHub Pages).
+- Para elegir el formato de salida, en el encabezado de **index.Rmd** configure `thesis_formats <- "pdf";` o combine múltiples formatos como `c("pdf", "bs4", "gitbook", "word")`.
+
+#### Salida en PDF
+
+```yaml
+knit: (function(input, ...) {
+    thesis_formats <- "pdf";
+    ...
+```
+
+#### Salida BS4 book (HTML interactivo)
+
+```yaml
+knit: (function(input, ...) {
+    thesis_formats <- "bs4";
+    ...
+```
+
+#### Salida GitBook (HTML)
+
+```yaml
+knit: (function(input, ...) {
+    thesis_formats <- "gitbook";
+    ...
+```
+
+#### Salida en Word (.docx)
+
+```yaml
+knit: (function(input, ...) {
+    thesis_formats <- "word";
+    ...
+```

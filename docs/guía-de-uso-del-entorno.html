@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Capítulo 1 Guía de Uso del Entorno | Econometrics: Enfoques Modernos en Econometría y Ciencia de Datos Investigación y Aplicación</title>
+<meta name="author" content="Dilan Alexander Manosalvas Andrade">
+<meta name="description" content="1.1 Estructura del Proyecto . +-- index.Rmd +-- _bookdown.yml +-- 00-introduction.Rmd |  ... +-- 07-conclusion.Rmd +-- front-and-back-matter |  +-- _abstract.Rmd |  +-- 98-appendices.Rmd |  ......">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="Capítulo 1 Guía de Uso del Entorno | Econometrics: Enfoques Modernos en Econometría y Ciencia de Datos Investigación y Aplicación">
+<meta property="og:type" content="book">
+<meta property="og:description" content="1.1 Estructura del Proyecto . +-- index.Rmd +-- _bookdown.yml +-- 00-introduction.Rmd |  ... +-- 07-conclusion.Rmd +-- front-and-back-matter |  +-- _abstract.Rmd |  +-- 98-appendices.Rmd |  ......">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Capítulo 1 Guía de Uso del Entorno | Econometrics: Enfoques Modernos en Econometría y Ciencia de Datos Investigación y Aplicación">
+<meta name="twitter:description" content="1.1 Estructura del Proyecto . +-- index.Rmd +-- _bookdown.yml +-- 00-introduction.Rmd |  ... +-- 07-conclusion.Rmd +-- front-and-back-matter |  +-- _abstract.Rmd |  +-- 98-appendices.Rmd |  ......">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+          margin-bottom: 0em;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="templates/bs4_style.css">
+<link rel="stylesheet" href="templates/corrections.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title=""><p>Econometrics:<br>
+Enfoques Modernos en Econometría y Ciencia de Datos<br>
+Investigación y Aplicación</p></a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Bienvenida</a></li>
+<li><a class="" href="introducci%C3%B3n.html">Introducción</a></li>
+<li><a class="active" href="gu%C3%ADa-de-uso-del-entorno.html"><span class="header-section-number">1</span> Guía de Uso del Entorno</a></li>
+<li><a class="" href="rmd-basics.html"><span class="header-section-number">2</span> R Markdown basics</a></li>
+<li><a class="" href="cites-and-refs.html"><span class="header-section-number">3</span> Citations, cross-references, and collaboration</a></li>
+<li><a class="" href="tables.html"><span class="header-section-number">4</span> Tables</a></li>
+<li><a class="" href="customisations-and-extensions.html"><span class="header-section-number">5</span> Customisations and extensions</a></li>
+<li><a class="" href="troubleshooting.html"><span class="header-section-number">6</span> Troubleshooting</a></li>
+<li><a class="" href="conclusion.html">Conclusion</a></li>
+<li class="book-part">Apéndices</li>
+<li><a class="" href="primer-ap%C3%A9ndice.html"><span class="header-section-number">A</span> Primer Apéndice</a></li>
+<li><a class="" href="segundo-ap%C3%A9ndice-notas-metodol%C3%B3gicas-y-computacionales.html"><span class="header-section-number">B</span> Segundo Apéndice: Notas Metodológicas y Computacionales</a></li>
+<li><a class="" href="referencias.html">Referencias</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/dilanmano20010-design">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="guía-de-uso-del-entorno" class="section level1" number="1">
+<h1>
+<span class="header-section-number">Capítulo 1</span> Guía de Uso del Entorno<a class="anchor" aria-label="anchor" href="#gu%C3%ADa-de-uso-del-entorno"><i class="fas fa-link"></i></a>
+</h1>
+<p><!-- esto incluye una mini tabla de contenidos --></p>
+<div id="estructura-del-proyecto" class="section level2" number="1.1">
+<h2>
+<span class="header-section-number">1.1</span> Estructura del Proyecto<a class="anchor" aria-label="anchor" href="#estructura-del-proyecto"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-1" tabindex="-1"></a>.</span>
+<span id="cb1-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-2" tabindex="-1"></a>+-- index.Rmd</span>
+<span id="cb1-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-3" tabindex="-1"></a>+-- _bookdown.yml</span>
+<span id="cb1-4"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-4" tabindex="-1"></a>+-- 00-introduction.Rmd</span>
+<span id="cb1-5"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-5" tabindex="-1"></a><span class="pp">|</span>   ...</span>
+<span id="cb1-6"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-6" tabindex="-1"></a>+-- 07-conclusion.Rmd</span>
+<span id="cb1-7"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-7" tabindex="-1"></a>+-- front-and-back-matter</span>
+<span id="cb1-8"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-8" tabindex="-1"></a><span class="pp">|</span>   +-- _abstract.Rmd</span>
+<span id="cb1-9"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-9" tabindex="-1"></a><span class="pp">|</span>   +-- 98-appendices.Rmd</span>
+<span id="cb1-10"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-10" tabindex="-1"></a><span class="pp">|</span>   ...</span>
+<span id="cb1-11"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-11" tabindex="-1"></a>+-- bibliography</span>
+<span id="cb1-12"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-12" tabindex="-1"></a><span class="pp">|</span>   +-- references.bib</span>
+<span id="cb1-13"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-13" tabindex="-1"></a><span class="pp">|</span>   ...</span>
+<span id="cb1-14"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-14" tabindex="-1"></a>+-- figures</span>
+<span id="cb1-15"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-15" tabindex="-1"></a><span class="pp">|</span>   ...</span>
+<span id="cb1-16"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-16" tabindex="-1"></a>+-- docs</span>
+<span id="cb1-17"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-17" tabindex="-1"></a><span class="pp">|</span>   +-- _main.pdf</span>
+<span id="cb1-18"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-18" tabindex="-1"></a><span class="pp">|</span>   ...</span>
+<span id="cb1-19"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-19" tabindex="-1"></a>+-- scripts_and_filters</span>
+<span id="cb1-20"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-20" tabindex="-1"></a><span class="pp">|</span>   +-- knit-functions.R</span>
+<span id="cb1-21"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-21" tabindex="-1"></a><span class="pp">|</span>   ...</span>
+<span id="cb1-22"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-22" tabindex="-1"></a>+-- templates</span>
+<span id="cb1-23"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-23" tabindex="-1"></a><span class="pp">|</span>   +-- template.tex</span>
+<span id="cb1-24"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb1-24" tabindex="-1"></a><span class="pp">|</span>   ...</span></code></pre></div>
+<div id="index.rmd-metadatos-y-opciones-de-diseño" class="section level3" number="1.1.1">
+<h3>
+<span class="header-section-number">1.1.1</span> index.Rmd: <strong>metadatos y opciones de diseño</strong><a class="anchor" aria-label="anchor" href="#index.rmd-metadatos-y-opciones-de-dise%C3%B1o"><i class="fas fa-link"></i></a>
+</h3>
+<p>En <code>index.Rmd</code> se definen los metadatos principales del documento (título, autor, institución):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-1" tabindex="-1"></a><span class="fu">title</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb2-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-2" tabindex="-1"></a>  EconometricSI: \</span>
+<span id="cb2-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-3" tabindex="-1"></a>  Enfoques Modernos en Econometría y Ciencia de Datos \</span>
+<span id="cb2-4"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-4" tabindex="-1"></a>  Investigación y Aplicación</span>
+<span id="cb2-5"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-5" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Dilan Alexander Manosalvas Andrade</span></span>
+<span id="cb2-6"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-6" tabindex="-1"></a><span class="fu">college</span><span class="kw">:</span><span class="at"> Departamento de Ciencias Económicas, Administrativas y de Comercio</span></span>
+<span id="cb2-7"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb2-7" tabindex="-1"></a><span class="fu">university</span><span class="kw">:</span><span class="at"> Universidad de las Fuerzas Armadas ESPE</span></span></code></pre></div>
+<p>También se configuran las rutas hacia el resumen, agradecimientos, abreviaturas y bibliografía (uno o varios archivos <strong>.bib</strong>):</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-1" tabindex="-1"></a><span class="fu">abstract</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-2" tabindex="-1"></a>  Esta investigación presenta la aplicación de enfoques modernos en econometría y ciencia de datos, integrando herramientas computacionales avanzadas en *R Markdown* y `bookdown` para el análisis cuantitativo riguroso, reproducible y aplicado a los negocios y pequeñas y medianas empresas (PYMES).</span>
+<span id="cb3-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-3" tabindex="-1"></a>  </span>
+<span id="cb3-4"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-4" tabindex="-1"></a>  El trabajo aborda el modelado estadístico y econométrico mediante flujos de trabajo computacionales transparentes, permitiendo vincular directamente fuentes de datos, estimaciones econométricas, visualizaciones dinámicas y documentación teórica en un solo entorno reproducible.</span>
+<span id="cb3-5"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-5" tabindex="-1"></a>  </span>
+<span id="cb3-6"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-6" tabindex="-1"></a>  A través del proyecto **Econometrics**, se promueve la adopción de metodologías empíricas sólidas que buscan contribuir a la transformación de la gestión organizacional y facilitar la toma de decisiones basada en evidencia cuantitativa. Los desarrollos, investigaciones y soluciones vinculadas al proyecto se encuentran disponibles en **[econometricis.vercel.app](https://econometricis.vercel.app/)**.</span>
+<span id="cb3-7"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-7" tabindex="-1"></a>  </span>
+<span id="cb3-8"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-8" tabindex="-1"></a>  **Palabras clave:** Econometría, ciencia de datos, análisis cuantitativo, PYMES, R Markdown, *bookdown*, reproducibilidad, toma de decisiones basada en evidencia.</span>
+<span id="cb3-9"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-9" tabindex="-1"></a><span class="fu">acknowledgements</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-10"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-10" tabindex="-1"></a>  Expreso mi más sincero agradecimiento a mi madre, Azucena Manosalvas, a mis hermanos y a mi querida amiga Jhennyfer Eivar, cuyo apoyo y compañía han sido fundamentales en mi camino. A Jhennyfer, en particular, le agradezco por ayudarme a mantener la mirada en la pragmática de la vida, recordándome que el conocimiento adquiere verdadero sentido cuando puede comprenderse, aplicarse y aportar a la realidad.</span>
+<span id="cb3-11"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-11" tabindex="-1"></a>  </span>
+<span id="cb3-12"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-12" tabindex="-1"></a>  A mis mentores, gracias por compartir sus conocimientos, exigirme siempre un poco más y enseñarme que aprender también significa cuestionar, explorar y construir nuevas formas de comprender el mundo. A mis queridos estudiantes, mi especial gratitud: ustedes me han enseñado que toda explicación debe partir de la sencillez, de esa manera en que un niño observa su entorno con curiosidad, sin complicaciones innecesarias y sin abrumar su propio proceso de descubrimiento. Gracias por recordarme que, muchas veces, comprender lo complejo comienza por saber explicarlo de manera sencilla.</span>
+<span id="cb3-13"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-13" tabindex="-1"></a>  </span>
+<span id="cb3-14"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-14" tabindex="-1"></a>  Extiendo también mi profundo agradecimiento a la Universidad de las Fuerzas Armadas ESPE, por su guía continua, su rigurosidad académica y las valiosas enseñanzas que han acompañado mi formación profesional y personal.</span>
+<span id="cb3-15"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-15" tabindex="-1"></a>  </span>
+<span id="cb3-16"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-16" tabindex="-1"></a>  Finalmente, agradezco de corazón a mis seres queridos por su apoyo incondicional, su paciencia y su confianza en cada etapa del camino. Cada palabra de aliento, cada gesto de comprensión y cada momento compartido.</span>
+<span id="cb3-17"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-17" tabindex="-1"></a>  </span>
+<span id="cb3-18"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-18" tabindex="-1"></a>  </span>
+<span id="cb3-19"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-19" tabindex="-1"></a>  \begin{flushright}</span>
+<span id="cb3-20"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-20" tabindex="-1"></a>  Dilan Alexander Manosalvas Andrade \\</span>
+<span id="cb3-21"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-21" tabindex="-1"></a>  Universidad de las Fuerzas Armadas ESPE \\</span>
+<span id="cb3-22"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-22" tabindex="-1"></a>  Quito, Ecuador</span>
+<span id="cb3-23"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-23" tabindex="-1"></a>  \end{flushright}</span>
+<span id="cb3-24"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-24" tabindex="-1"></a><span class="fu">dedication</span><span class="kw">:</span><span class="at"> A mi familia y mentores</span></span>
+<span id="cb3-25"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-25" tabindex="-1"></a><span class="fu">abbreviations</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-26"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-26" tabindex="-1"></a>  \item[1-D, 2-D] Una o dos dimensiones, correspondiente a las dimensiones espaciales o matriciales del análisis.</span>
+<span id="cb3-27"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-27" tabindex="-1"></a>  </span>
+<span id="cb3-28"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-28" tabindex="-1"></a>  \item[ESPE] Universidad de las Fuerzas Armadas ESPE.</span>
+<span id="cb3-29"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-29" tabindex="-1"></a>  </span>
+<span id="cb3-30"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-30" tabindex="-1"></a>  \item[PYMES] Pequeñas y medianas empresas.</span>
+<span id="cb3-31"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-31" tabindex="-1"></a>  </span>
+<span id="cb3-32"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-32" tabindex="-1"></a>  \item[MCO] Mínimos Cuadrados Ordinarios.</span>
+<span id="cb3-33"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-33" tabindex="-1"></a></span>
+<span id="cb3-34"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-34" tabindex="-1"></a><span class="co">#######################</span></span>
+<span id="cb3-35"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-35" tabindex="-1"></a><span class="co">## bibliography path ##</span></span>
+<span id="cb3-36"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-36" tabindex="-1"></a><span class="co">#######################</span></span>
+<span id="cb3-37"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb3-37" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">bibliography/references.bib</span><span class="kw">,</span><span class="at"> bibliography/additional-references.bib</span><span class="kw">]</span></span></code></pre></div>
+<p>Finalmente, en <strong>index.Rmd</strong> se personalizan las opciones de salida: encabezados de bibliografía, numeración de páginas, idioma (Español) y estilos visuales.</p>
+</div>
+<div id="otros-archivos-.rmd-en-la-raíz-capítulos" class="section level3" number="1.1.2">
+<h3>
+<span class="header-section-number">1.1.2</span> Otros archivos <strong>.Rmd</strong> en la raíz: Capítulos<a class="anchor" aria-label="anchor" href="#otros-archivos-.rmd-en-la-ra%C3%ADz-cap%C3%ADtulos"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Cada capítulo cuenta con su propio archivo <strong>.Rmd</strong> en el directorio raíz.</li>
+<li>Al compilar <strong>index.Rmd</strong>, los capítulos se combinan automáticamente en orden alfanumérico según sus nombres de archivo.</li>
+</ul>
+</div>
+<div id="front-and-back-matter" class="section level3" number="1.1.3">
+<h3>
+<span class="header-section-number">1.1.3</span> <strong>front-and-back-matter/</strong><a class="anchor" aria-label="anchor" href="#front-and-back-matter"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Carpeta que contiene las secciones preliminares y finales.</li>
+<li>Los archivos con guión bajo inicial (como <strong>_abstract.Rmd</strong>) no se fusionan automáticamente, sino que son llamados explícitamente desde <strong>index.Rmd</strong>.</li>
+<li>Los archivos como <strong>98-appendices.Rmd</strong> y <strong>99-references_heading.Rmd</strong> se integran al final del documento.</li>
+</ul>
+</div>
+<div id="templates" class="section level3" number="1.1.4">
+<h3>
+<span class="header-section-number">1.1.4</span> <strong>templates</strong><a class="anchor" aria-label="anchor" href="#templates"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>template.tex</strong>: plantilla LaTeX para compilar el documento completo a PDF.</li>
+<li>
+<strong>brief_template.tex</strong>: plantilla para compilar previsualizaciones de capítulos individuales.</li>
+<li>
+<strong>beltcrest.pdf</strong>: logotipo institucional (Universidad de las Fuerzas Armadas ESPE) de la portada.</li>
+</ul>
+</div>
+</div>
+<div id="compilación-del-documento-completo" class="section level2" number="1.2">
+<h2>
+<span class="header-section-number">1.2</span> Compilación del Documento Completo<a class="anchor" aria-label="anchor" href="#compilaci%C3%B3n-del-documento-completo"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Para compilar el documento completo, abra <strong>index.Rmd</strong> en RStudio y haga clic en el botón <strong>Knit</strong>.</li>
+<li>Los archivos compilados se guardan automáticamente en la carpeta <strong>docs/</strong> (ideal para GitHub Pages).</li>
+<li>Para elegir el formato de salida, en el encabezado de <strong>index.Rmd</strong> configure <code>thesis_formats &lt;- "pdf";</code> o combine múltiples formatos como <code>c("pdf", "bs4", "gitbook", "word")</code>.</li>
+</ul>
+<div id="salida-en-pdf" class="section level4" number="1.2.0.1">
+<h4>
+<span class="header-section-number">1.2.0.1</span> Salida en PDF<a class="anchor" aria-label="anchor" href="#salida-en-pdf"><i class="fas fa-link"></i></a>
+</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb4-1" tabindex="-1"></a><span class="fu">knit</span><span class="kw">:</span><span class="at"> (function(input, ...) {</span></span>
+<span id="cb4-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb4-2" tabindex="-1"></a><span class="at">    thesis_formats &lt;- "pdf";</span></span>
+<span id="cb4-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb4-3" tabindex="-1"></a><span class="at">    ...</span></span></code></pre></div>
+</div>
+<div id="salida-bs4-book-html-interactivo" class="section level4" number="1.2.0.2">
+<h4>
+<span class="header-section-number">1.2.0.2</span> Salida BS4 book (HTML interactivo)<a class="anchor" aria-label="anchor" href="#salida-bs4-book-html-interactivo"><i class="fas fa-link"></i></a>
+</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb5-1" tabindex="-1"></a><span class="fu">knit</span><span class="kw">:</span><span class="at"> (function(input, ...) {</span></span>
+<span id="cb5-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb5-2" tabindex="-1"></a><span class="at">    thesis_formats &lt;- "bs4";</span></span>
+<span id="cb5-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb5-3" tabindex="-1"></a><span class="at">    ...</span></span></code></pre></div>
+</div>
+<div id="salida-gitbook-html" class="section level4" number="1.2.0.3">
+<h4>
+<span class="header-section-number">1.2.0.3</span> Salida GitBook (HTML)<a class="anchor" aria-label="anchor" href="#salida-gitbook-html"><i class="fas fa-link"></i></a>
+</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb6-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb6-1" tabindex="-1"></a><span class="fu">knit</span><span class="kw">:</span><span class="at"> (function(input, ...) {</span></span>
+<span id="cb6-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb6-2" tabindex="-1"></a><span class="at">    thesis_formats &lt;- "gitbook";</span></span>
+<span id="cb6-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb6-3" tabindex="-1"></a><span class="at">    ...</span></span></code></pre></div>
+</div>
+<div id="salida-en-word-.docx" class="section level4" number="1.2.0.4">
+<h4>
+<span class="header-section-number">1.2.0.4</span> Salida en Word (.docx)<a class="anchor" aria-label="anchor" href="#salida-en-word-.docx"><i class="fas fa-link"></i></a>
+</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb7-1" tabindex="-1"></a><span class="fu">knit</span><span class="kw">:</span><span class="at"> (function(input, ...) {</span></span>
+<span id="cb7-2"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb7-2" tabindex="-1"></a><span class="at">    thesis_formats &lt;- "word";</span></span>
+<span id="cb7-3"><a href="gu%C3%ADa-de-uso-del-entorno.html#cb7-3" tabindex="-1"></a><span class="at">    ...</span></span></code></pre></div>
+
+
+<!-- 
+Notes for adding an opening quote in PDF output:
+i) add the reference for the quote with the chunk option quote_author="my author name",
+ii) include=knitr::opts_knit$get('rmarkdown.pandoc.to') == 'latex' means that these quotes are only included when output is latex (in HTML output, it would appear by the end of the previous page)
+iii) You can't use markdown syntax inside chunk options, so if you want to e.g. italicise a book name in the quote reference use a 'text reference': Create a named piece of text with '(ref:label-name) My text', then link to this in the chunk option with quote_author='(ref:label-name)'
+-->
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="introducci%C3%B3n.html">Introducción</a></div>
+<div class="next"><a href="rmd-basics.html"><span class="header-section-number">2</span> R Markdown basics</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#gu%C3%ADa-de-uso-del-entorno"><span class="header-section-number">1</span> Guía de Uso del Entorno</a></li>
+<li>
+<a class="nav-link" href="#estructura-del-proyecto"><span class="header-section-number">1.1</span> Estructura del Proyecto</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#index.rmd-metadatos-y-opciones-de-dise%C3%B1o"><span class="header-section-number">1.1.1</span> index.Rmd: metadatos y opciones de diseño</a></li>
+<li><a class="nav-link" href="#otros-archivos-.rmd-en-la-ra%C3%ADz-cap%C3%ADtulos"><span class="header-section-number">1.1.2</span> Otros archivos .Rmd en la raíz: Capítulos</a></li>
+<li><a class="nav-link" href="#front-and-back-matter"><span class="header-section-number">1.1.3</span> front-and-back-matter/</a></li>
+<li><a class="nav-link" href="#templates"><span class="header-section-number">1.1.4</span> templates</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#compilaci%C3%B3n-del-documento-completo"><span class="header-section-number">1.2</span> Compilación del Documento Completo</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/dilanmano20010-design/blob/master/01-how-to-use.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/dilanmano20010-design/edit/master/01-how-to-use.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong><p>Econometrics:<br>
+Enfoques Modernos en Econometría y Ciencia de Datos<br>
+Investigación y Aplicación</p></strong>" was written by Dilan Alexander Manosalvas Andrade. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

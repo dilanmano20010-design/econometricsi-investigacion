@@ -1,0 +1,5 @@
+﻿% Correcciones de compatibilidad con Pandoc 3.x
+% Redefinir \hl para usar colorbox (sin tokenizador de soul)
+\renewcommand{\hl}[1]{\colorbox{correctioncolor}{\strut #1}}
+% Registrar \citeproc con soul
+\soulregister\citeproc7

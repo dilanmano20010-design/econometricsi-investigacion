@@ -1,0 +1,32 @@
+# Directorio donde se guardan las salidas compiladas (HTML, PDF, etc.)
+output_dir: "docs"
+
+# Si está en true, borra automáticamente archivos temporales combinados
+delete_merged_file: true
+
+# Subdirectorios a incluir para capítulos o secciones preliminares
+rmd_subdir: ["front-and-back-matter"]
+
+# Enlace al repositorio de GitHub del autor
+edit: https://github.com/dilanmano20010-design/econometricsi-investigacion/tree/main/%s
+
+# Configuración de idioma en Español para knitr y bookdown
+language:
+  label:
+    fig: "Figura "
+    tab: "Tabla "
+    eq: "Ecuación "
+    thm: "Teorema "
+    lem: "Lema "
+    cor: "Corolario "
+    prp: "Proposición "
+    cnj: "Conjetura "
+    def: "Definición "
+    exm: "Ejemplo "
+    exr: "Ejercicio "
+    proof: "Demostración: "
+    remark: "Nota: "
+    solution: "Solución: "
+  ui:
+    edit: "Editar"
+    chapter_name: ["Capítulo ", ""]

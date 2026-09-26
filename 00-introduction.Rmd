@@ -1,0 +1,40 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  bookdown::html_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+  bookdown::word_document2: default
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# Introducción {.unnumbered}
+
+```{=tex}
+\adjustmtc
+\markboth{Introducción}{}
+```
+<!-- Para salida en PDF, estos comandos LaTeX después de títulos no numerados mantienen la sincronización de encabezados y minitoc -->
+
+Bienvenido a la investigación y marco computacional de **[EconometricSI — Enfoques Modernos](https://econometricis.vercel.app/)**, desarrollado por **Dilan Alexander Manosalvas Andrade** en la **Universidad de las Fuerzas Armadas ESPE**. 
+
+Este entorno permite redactar documentos académicos, tesis e investigaciones de alto impacto utilizando **R Markdown** y **bookdown**, integrando de manera fluida el análisis econométrico, modelos estadísticos y visualizaciones avanzadas con una presentación editorial rigurosa tanto en formato digital (HTML) como impreso (PDF) y procesadores de texto (Word).
+
+Escribir investigaciones en R Markdown permite embeber bloques de código (*chunks*) directamente en el texto del informe, generando tablas y figuras dinámicamente a partir de los microdatos subyacentes sin recurrir a procesos manuales de copiar y pegar. Esto fomenta la investigación reproducible y científica, facilitando la auditoría, replicación y mejora de los resultados empíricos obtenidos.
+
+## ¿Por qué utilizar este enfoque? {.unnumbered}
+
+*R Markdown* ofrece una interfaz ágil, moderna e intuitiva para aprovechar la potencia tipográfica de LaTeX:
+
+- Los paquetes de **R** y **Python** interactúan directamente para generar modelos econométricos, tablas estilizadas y gráficos de alta calidad.
+- Permite leer datos, limpiarlos, estimar especificaciones econométricas y pasar resultados directamente al cuerpo del texto en tiempo real mediante código en línea.
+- Genera flujos de trabajo reproducibles donde cualquier actualización en los datos recalcula automáticamente todas las estadísticas, tablas y gráficos.
+- Brinda estabilidad y consistencia editorial superior frente a procesadores de palabras convencionales, manteniendo archivos fuente ligeros y versionables con Git y GitHub.
+
+## ¿A quién está dirigida esta investigación? {.unnumbered}
+
+Esta obra está dirigida a investigadores, economistas, científicos de datos, estudiantes y profesionales del área empresarial y cuantitativa interesados en aplicar enfoques modernos de econometría, análisis de datos y modelación estadística a la toma de decisiones estratégicas, optimización operativa y crecimiento de pequeñas y medianas empresas (PYMES).
